@@ -1,0 +1,50 @@
+version: '3.4'
+
+services:
+  mongodb:
+    image: mongo
+
+  silo1:
+    image: asabla/silo
+    depends_on:
+      - mongodb
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+  silo2:
+    image: asabla/silo
+    depends_on:
+      - mongodb
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+  silo3:
+    image: asabla/silo
+    depends_on:
+      - mongodb
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+  silo4:
+    image: asabla/silo
+    depends_on:
+      - mongodb
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+  web1:
+    image: asabla/rocketconweb
+    depends_on:
+      - silo1
+    ports:
+      - 5000:5000
+      - 80:80
+    build:
+      context: .
+      dockerfile: frontends/web/Dockerfile

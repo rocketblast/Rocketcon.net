@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{5C2D6FA7-8DA0-4ACB-871B-26FB68AC532C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{66975B77-9F5A-47F1-B677-DDE1D52D722D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontends", "frontends", "{FE07DFE6-94ED-405E-952C-690FB52A9920}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "silo", "backend\silo.csproj", "{B3E74A4C-F901-442D-BCB6-009C67F50105}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interfaces", "common\interfaces\interfaces.csproj", "{8E44703D-D8D4-4BCA-96F7-72E25DB639FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grains", "common\grains\grains.csproj", "{BBFEB373-2642-4F66-A9D2-F5CFA52CFE08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocketcon-web", "frontends\web\Rocketcon-web.csproj", "{310B142D-3789-490A-A4D1-0695012E7838}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6406DBB8-C39D-4E98-AB03-C544E60658A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3E74A4C-F901-442D-BCB6-009C67F50105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E74A4C-F901-442D-BCB6-009C67F50105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E74A4C-F901-442D-BCB6-009C67F50105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E74A4C-F901-442D-BCB6-009C67F50105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E44703D-D8D4-4BCA-96F7-72E25DB639FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E44703D-D8D4-4BCA-96F7-72E25DB639FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E44703D-D8D4-4BCA-96F7-72E25DB639FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E44703D-D8D4-4BCA-96F7-72E25DB639FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFEB373-2642-4F66-A9D2-F5CFA52CFE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFEB373-2642-4F66-A9D2-F5CFA52CFE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFEB373-2642-4F66-A9D2-F5CFA52CFE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFEB373-2642-4F66-A9D2-F5CFA52CFE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310B142D-3789-490A-A4D1-0695012E7838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310B142D-3789-490A-A4D1-0695012E7838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310B142D-3789-490A-A4D1-0695012E7838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310B142D-3789-490A-A4D1-0695012E7838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6406DBB8-C39D-4E98-AB03-C544E60658A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6406DBB8-C39D-4E98-AB03-C544E60658A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6406DBB8-C39D-4E98-AB03-C544E60658A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6406DBB8-C39D-4E98-AB03-C544E60658A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3E74A4C-F901-442D-BCB6-009C67F50105} = {5C2D6FA7-8DA0-4ACB-871B-26FB68AC532C}
+		{8E44703D-D8D4-4BCA-96F7-72E25DB639FB} = {66975B77-9F5A-47F1-B677-DDE1D52D722D}
+		{BBFEB373-2642-4F66-A9D2-F5CFA52CFE08} = {66975B77-9F5A-47F1-B677-DDE1D52D722D}
+		{310B142D-3789-490A-A4D1-0695012E7838} = {FE07DFE6-94ED-405E-952C-690FB52A9920}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33D4CA89-10D2-4FB3-A7CB-4FB0D3EFA7A6}
+	EndGlobalSection
+EndGlobal
